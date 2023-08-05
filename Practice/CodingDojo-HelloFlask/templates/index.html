@@ -7,5 +7,15 @@
 </head>
 <body>
     <h1>Hola flask</h1>
+    <h3>Mi plantilla Flask</h3>
+    <p>Frase: {{ frase }}</p>
+    <p>Times: {{ times }}</p>
+    {% for index in range(0, times): %}
+        <p>{{ frase }}</p>
+    {% endfor %}
+
+    {% if frase == "Hola": %}
+        <p>La frase dice hola</p>
+    {% endif %}
 </body>
 </html>

@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
 def hola_flask ():
-    return 'Hola Flask!'
+    return render_template('index.html', frase='Hola', times=5)
 
 @app.route('/success')
 def success():
