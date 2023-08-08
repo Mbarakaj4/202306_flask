@@ -2,8 +2,8 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Realmente estaba teniendo problemas con este ejercicio, asique decidi
-# Seguir el tutorial de la solucion :c
+# Realmente estaba teniendo problemas con este ejercicio, asi que decidí
+# Seguir el tutorial de la solución :c
 
 @app.route('/play')
 def level_one():
