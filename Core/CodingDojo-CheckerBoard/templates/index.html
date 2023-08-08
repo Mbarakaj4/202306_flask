@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>Checkerboard</title>
+    <style>
+        .color-1 {
+            background-color: {{color1}};
+        }
+
+        .color-2 {
+            background-color: {{color2}};
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="align">
+            <h1>Welcome!!!</h1>
+        </header>
+        <article>
+            <table class="align">
+                <tbody>
+                    {%for x in range (i):%}
+                    <tr>
+                        {%for y in range (j):%}
+                        <td class="color-{{(x+y)%2 + 1}} size"></td>
+                        {%endfor%}
+                    </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+        </article>
+    </main>
+</body>
+
+</html>
