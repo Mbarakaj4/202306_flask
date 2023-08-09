@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <form action="/process" method="post" class=" p-5 col-6 mx-auto">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="ubicacion">Ubicacion:</label>
+            <select name="ubicacion"  class="form-control">
+                <option value="">--SELECCIONAR--</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Online">Online</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="lenguajes">Idioma favorito:</label>
+            <select name="lenguajes"  class="form-control">
+                <option value="">--SELECCIONAR--</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comentario">Comentarios:</label>
+            <textarea name="comentario"  cols="30" rows="10" class="form-control"></textarea>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+</body>
+</html>
